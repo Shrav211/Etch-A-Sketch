@@ -1,0 +1,28 @@
+body {
+    margin: 30px;
+    font-family: monospace;
+}
+
+.grid-container {
+    background: #eee;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.grid-container > div {
+    background: red;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #777;
+}
+
+/* .grid-container > div:hover {
+    background-color: black;
+} */
+
+.grid-container .box.active {
+    background: black;
+}
